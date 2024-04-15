@@ -6,9 +6,7 @@ type Props = {
    base64: string;
 };
 const BettingMarkup = ({ base64 }: Props) => {
-   const { t } = useTranslation();
    const setIsSignInModalOpen = useModalsStore.use.setIsSignInModalOpen();
-   const contentRef = useRef<HTMLDivElement>(null);
 
    useEffect(() => {
       const content = new BettingContent(base64, {
