@@ -6,6 +6,8 @@ enum NamingEnum {
    onRouteChange = 'BettingOnRouteChange',
 }
 
+const execute = <T>(fn: () => T): T => fn();
+
 export class BettingContent {
    private debug: boolean;
 
